@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人簡介</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="profile-image">
+            <img src="images/dog.jpg" alt="可愛的黃金獵犬">
+        </div>
+        <h1>高安育</h1>
+        <p>大學生</p>
+    </header>
+
+    <section>
+        <h2>關於我</h2>
+        <p>我是一位就讀於世新大學廣播電視電影學系電影組的學生，對影視製作與數位內容創作充滿熱情。目前正在學習影片製作和網頁開發技術，希望能夠結合創意與科技，打造具有吸引力的視覺作品。</p>
+    </section>
+
+    <section>
+        <h2>學習與工作經歷</h2>
+        <ul>
+            <li><strong>大學生</strong> - 世新大學 廣播電視電影學系電影組 (2023-現在)</li>
+            <li><strong>星巴克 咖啡師</strong> - 南京建國門市 (2024-現在)
+                <ul style="margin-top: 5px; margin-left: 20px;">
+                    <li>負責調製各式咖啡飲品</li>
+                    <li>提供優質的顧客服務</li>
+                    <li>維護店面整潔與商品陳列</li>
+                </ul>
+            </li>
+            <li><strong>影片製作</strong> - 短片創作 (2023-現在)</li>
+            <li><strong>網頁開發專案</strong> - 個人網站開發 (2024)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>求學經歷</h2>
+        <ul>
+            <li><strong>大學</strong> - 世新大學 廣播電視電影學系電影組 (2023-現在)</li>
+            <li><strong>高中</strong> - 臺北市立大直高級中學 (2020-2023)</li>
+            <li><strong>國中</strong> - 臺北市立大直國民中學 (2017-2020)</li>
+            <li><strong>國小</strong> - 臺北市立大直國民小學 (2011-2017)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>技能與興趣</h2>
+        <ul>
+            <li>影片拍攝與剪輯</li>
+            <li>劇本創作</li>
+            <li>網頁開發 (HTML, CSS)</li>
+            <li>影視製作</li>
+            <li>團隊合作能力</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>興趣愛好</h2>
+        <ul>
+            <li>💃 跳舞 - 熱愛舞蹈帶來的快樂與自由</li>
+            <li>🎬 電影 - 享受觀賞各種類型的電影</li>
+            <li>🎵 音樂 - 喜歡聆聽不同風格的音樂</li>
+        </ul>
+    </section>
+
+    <section class="chat-section">
+        <h2>AI 對話助手</h2>
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <!-- 對話內容會在這裡顯示 -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="輸入訊息...">
+                <button onclick="sendMessage()">發送</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>聯絡方式</h2>
+        <p>📧 電子郵件：<a href="mailto:angelakao95422@gmail.com">angelakao95422@gmail.com</a></p>
+        <p>📱 電話：(+886)0931993331</p>
+    </section>
+
+    <section class="portfolio">
+        <h2>未來作品計畫</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="images/film.jpg" alt="微電影企劃">
+                <h3>微電影企劃：「青春紀事」</h3>
+                <p>正在籌備的校園生活主題微電影，預計擔任導演與剪輯，計畫於2024年完成。</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/documentary.jpg" alt="紀錄片計畫">
+                <h3>紀錄片計畫：「城市印記」</h3>
+                <p>計畫製作關於台北市街道故事的紀錄片，預計進行街頭採訪與歷史考察。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>學習中的專業技能</h2>
+        <div class="skill-bars">
+            <div class="skill">
+                <div class="skill-name">影片剪輯（Premiere Pro）</div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 65%">65%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">攝影基礎</div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 60%">60%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">分鏡腳本設計</div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 55%">55%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements">
+        <h2>學習���標</h2>
+        <ul class="achievement-list">
+            <li>
+                <span class="achievement-date">2024</span>
+                <div class="achievement-content">
+                    <h3>影視製作技能提升</h3>
+                    <p>精進 Premiere Pro 和 After Effects 的使用技巧</p>
+                </div>
+            </li>
+            <li>
+                <span class="achievement-date">2024</span>
+                <div class="achievement-content">
+                    <h3>參與校內影展</h3>
+                    <p>計畫製作短片參加校內影展競賽</p>
+                </div>
+            </li>
+            <li>
+                <span class="achievement-date">2025</span>
+                <div class="achievement-content">
+                    <h3>劇本創作</h3>
+                    <p>完成一部原創劇本的創作</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 高安育 | 保留所有權利</p>
+    </footer>
+
+    <script>
+    function sendMessage() {
+        const input = document.getElementById('userInput');
+        const message = input.value.trim();
+        if (message) {
+            const chatMessages = document.getElementById('chatMessages');
+            
+            // 添加用戶訊息
+            const userDiv = document.createElement('div');
+            userDiv.className = 'message user-message';
+            userDiv.textContent = message;
+            chatMessages.appendChild(userDiv);
+            
+            // 添加 AI 回應
+            const aiDiv = document.createElement('div');
+            aiDiv.className = 'message ai-message';
+            aiDiv.textContent = "我是 AI 助手，高興為您服務！";
+            chatMessages.appendChild(aiDiv);
+            
+            // 清空輸入框
+            input.value = '';
+            
+            // 滾動到最新訊息
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+    }
+
+    // 按 Enter 鍵發送訊息
+    document.getElementById('userInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+    </script>
+</body>
+</html>
